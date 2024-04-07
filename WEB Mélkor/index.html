@@ -1,0 +1,232 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight- Mélkor</title>
+    <style>
+        img {
+            display: block;
+            margin: auto;
+            align-items: center;
+            transition: transform 0.3s; 
+        }
+        iframe {
+            width: 640px;
+            height: 360px;
+            transition: transform 0.3s; 
+        }
+
+        
+        iframe:hover {
+            transform: scale(1.1); 
+        }
+       
+        img:hover {
+            transform: scale(1.1); 
+        }
+        body {
+            background-color: #1b1b1b;
+            font-family: 'Palatino Linotype', sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d7be69;
+        }
+
+        h2 {
+            font-family: 'Copperplate Gothic Bold', sans-serif;
+            font-size: 24px;
+            color: #6291a2;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        .caja{
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #333333;
+            padding: 20px; 
+            margin: 20px; 
+            border: 2px solid #ff9900; 
+            border-radius: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+        body {
+        background-color: #1b1b1b;
+        background-image: url(fondo.jpg); 
+        background-size: cover; 
+        background-position: center;
+        font-family: 'Palatino Linotype', sans-serif;
+        color: #ffffff;
+        text-align: center;
+        
+    
+    }
+    </style>
+</head>
+<footer>
+    <audio  controls autoplay loop>
+        <source src="Hollow Knight OST - Enter Hallownest_243Uguc-6mQ.mp3" type="audio/mp3" >
+    </audio>
+</footer>
+<body>
+    
+    <img src=Titulo.png alt="Hollow Knight" style="display: block; margin: auto; align-items: center;">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades Interactivas</title>
+</head>
+<body>
+
+    <title>Ventana Emergente y Cuadro de Diálogo</title>
+</head>
+<body>
+
+<h1>Ventana Emergente y Cuadro de Diálogo</h1>
+
+<button onclick="openPopup()">Ventana Emergente</button>
+<button onclick="openDialog()">Cuadro de Diálogo</button>
+<script>
+    function openPopup() {
+        
+        window.open('https://www.google.com', 'popupWindow', 'width=600,height=400');
+    }
+
+    function openDialog() {
+        
+        alert('Hollow knight es el mejor juego del mundo');
+    }
+</script>
+</body>
+
+<h1>Actividades Interactivas</h1>
+
+<button onclick="openPopup()">Abrir Ventana Emergente</button>
+<button onclick="openDialog()">Abrir Cuadro de Diálogo</button>
+
+<div class="question">
+    <h2>Pregunta 1: ¿Cuál es la desarrolladora de hollow knight?</h2>
+    <input type="text" id="answer1">
+</div>
+<div class="question">
+    <h2>Pregunta 2: ¿En qué año se publicó el juego?</h2>
+    <input type="text" id="answer2">
+</div>
+<div class="question">
+    <h2>Pregunta 3: ¿Cuál es el personaje principal?</h2>
+    <input type="text" id="answer3">
+</div>
+<div class="question">
+    <h2>Pregunta 4: ¿cuanto dinero recaudó en kickstarter?</h2>
+    <input type="text" id="answer4">
+</div>
+<div class="question">
+    <h2>Pregunta 5: ¿Cuál es el nombre de la secuela?</h2>
+    <input type="text" id="answer5">
+</div>
+
+<button onclick="checkAnswers()">Verificar Respuestas</button>
+
+<script>
+    let correctAnswers = 0;
+
+    function openPopup() {
+        window.open('popup.html', 'popupWindow', 'width=500,height=500');
+    }
+
+    function openDialog() {
+        alert("Esto es un cuadro de diálogo");
+    }
+
+    function checkAnswers() {
+        const answer1 = document.getElementById('answer1').value.toLowerCase();
+        const answer2 = document.getElementById('answer2').value.toLowerCase();
+        const answer3 = document.getElementById('answer3').value.toLowerCase();
+        const answer4 = document.getElementById('answer4').value.toLowerCase();
+        const answer5 = document.getElementById('answer5').value.toLowerCase();
+
+        if (answer1 === 'team cherry') correctAnswers++;
+        if (answer2 === '2017') correctAnswers++;
+        if (answer3 === 'the knight' || answer3 === 'agua') correctAnswers++;
+        if (answer4 === '57000') correctAnswers++;
+        if (answer5 === 'hollow knight silksong') correctAnswers++;
+
+        alert(`Respuestas correctas: ${correctAnswers}`);
+    }
+</script>
+
+
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enlace a Ejercicios</title>
+</head>
+<body>
+
+<h1>Enlace a Ejercicios</h1>
+
+<a href="Practica 1 Mélkor González 2ºB/Practica 1 Mélkor González.html">Ir a práctica 1</a>
+<a href="Practica 2 Mélkor González 2ºB/Practica 2 Mélkor González.html">Ir a práctica 2</a>
+<a href="Practica 3 Mélkor González 2ºB/Practica 3 Mélkor González.html">Ir a práctica 3</a>
+<a href="Practica 4 Mélkor González 2ºB/Practica 4 Mélkor González.html">Ir a práctica 4</a>
+<a href="Practica 5 Mélkor González 2ºB/Practica 5 Mélkor González.html">Ir a práctica 5</a>
+<a href="Practica 6 Mélkor González 2ºB/Practica 6 Mélkor González.html">Ir a práctica 6</a>
+
+</body>
+</html>
+
+
+</html>
+
+    <header>
+        <h1>Página Web de Hollow Knight</h1>
+    </header>
+
+    <nav>
+        <a href="https://www.hollowknight.com/" target="_blank" style="color: #d7be69;">Sitio Oficial del juego</a>
+    </nav>
+
+    <section>
+        <h2>Trailer oficial del juego(2015)</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/nSPJXlYjENE?si=K3E0T89VcmNEpW1y" title="Hollow knight trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="bold">Hollow knight es un videojuego perteneciente al género metroidvania desarrollado y publicado por Team Cherry. </p>
+        <p class="bold">El videojuego fue originalmente lanzado para Windows en febrero de 2017, y mas tarde para macOS y Linux en abril del mismo año,
+        el juego salió en consolas en 2018. Fue financiado como un proyecto de Kicksarter donde obtuvo 57.000 dólares para su desarrollo.</p>
+        
+        <div class="caja">El videojuego cuenta la historia del Caballero, en su búsqueda para descubrir los secretos del largamente abandonado reino de Hallownest, cuyas profundidades atraen a los aventureros y valientes con la promesa de tesoros o la respuesta a misterios antiguos.El modo de juego de Hollow Knight se enfoca principalmente en exploración, plataformas y combate. Los jugadores exploran un gran mundo interconectado usando una variedad de movimientos y técnicas de combate. En los distintos escenarios se pueden encontrar detalles que relatan la historia de Hallownest, tales como piedras con escritos, objetos particulares, etc. Al estilo clásico de los metroidvania, existen áreas del mundo a las que los jugadores no pueden acceder hasta que hayan obtenido algún objeto o habilidad particular. Los mapas de cada zona deben comprarse a Cornifer, el cartógrafo, que generalmente se encuentra escondido en esa área, y el jugador también puede comprar mejoras que permiten colocar marcadores en el mapa, o revelar partes del mismo a medida que van explorando. El guardado del juego sólo puede hacerse en los bancos para descansar que se encuentran esparcidos por todo el reino. Al sentarse en un banco, el mapa se actualizará con las zonas recientemente descubiertas por el Caballero, a su vez que regenera su salud en caso de que la haya perdido.</div>
+        <p class="italic underline">Aquí muestro el video que hice anteriormente como trabajo sobre este juego:</p>
+    </section>
+    <video width="640" height="360" controls style="display: block; margin: auto;">
+        <source src="VideoMélkor.mp4" type="video/mp4">
+        
+    </video>
+    <p class="bold">El juego tiene prevista una secuela, de la cual aún se sabe muy poco incluso 5 años después de su revelación, los mayores fanáticos esperan que este año se haga realidad su salida, y podamos disfrutar de horas y horas de entretenimiento.</p>
+    <p class="underline">Aquí está el trailer anunciado por Team Cherry en Nintendo hace 5 años:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yQxwbZsL14Y?si=HKetEJJPl4Wb83UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p class="bold">Espero que te haya entrado la curiosidad sobre el juego, y que ahora quieras probarlo si no lo hacías antes. Gracias por tu atención</p>
+    
+
+</html>
