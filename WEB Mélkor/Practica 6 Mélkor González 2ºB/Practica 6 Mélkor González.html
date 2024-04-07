@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test de 5 preguntas</title>
+<style>
+  #timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="timer">Tiempo restante: <span id="countdown">10</span> segundos</div>
+
+<div id="questions">
+  <div>
+    <p>Pregunta 1: ¿Cuál es la capital de España?</p>
+    <input type="text" id="answer1">
+  </div>
+  <div>
+    <p>Pregunta 2: ¿Quién escribió "Don Quijote de la Mancha"?</p>
+    <input type="text" id="answer2">
+  </div>
+  <div>
+    <p>Pregunta 3: ¿En qué año comenzó la Guerra Civil?</p>
+    <input type="text" id="answer3">
+  </div>
+  <div>
+    <p>Pregunta 4: ¿Con cuantos países hace frontera España?</p>
+    <input type="text" id="answer4">
+  </div>
+  <div>
+    <p>Pregunta 5: ¿Quién pintó las meninas?</p>
+    <input type="text" id="answer5">
+  </div>
+  <button onclick="checkAnswers()">Enviar respuestas</button>
+</div>
+
+<script>
+
+const correctAnswers = ["madrid", "miguel de cervantes", "1936", "5", "diego velázquez"];
+
+let timeLeft = 60; 
+const countdownElement = document.getElementById("countdown");
+
+
+function startTimer() {
+  const countdown = setInterval(() => {
+    timeLeft--;
+    countdownElement.textContent = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      alert("¡Tiempo agotado!");
+    }
+  }, 1000);
+}
+
+
+function checkAnswers() {
+  const answers = [
+    document.getElementById("answer1").value.toLowerCase(),
+    document.getElementById("answer2").value.toLowerCase(),
+    document.getElementById("answer3").value.toLowerCase(),
+    document.getElementById("answer4").value.toLowerCase(),
+    document.getElementById("answer5").value.toLowerCase()
+  ];
+
+  let score = 0;
+  answers.forEach((answer, index) => {
+    if (answer === correctAnswers[index]) {
+      score++;
+      
+      setTimeout(() => {
+        document.getElementById(`question${index + 1}`).style.backgroundColor = "lightgreen";
+        setTimeout(() => {
+          document.getElementById(`question${index + 1}`).style.backgroundColor = "inherit";
+        }, 500);
+      }, index * 1000);
+    }
+  });
+
+  alert(`Tu puntuación es ${score}/5`);
+}
+
+
+window.onload = startTimer;
+</script>
+
+</body>
+</html>

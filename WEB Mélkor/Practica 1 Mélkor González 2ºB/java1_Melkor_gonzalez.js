@@ -1,0 +1,12 @@
+var j = prompt("¿Cuál es tu nombre?");
+var x = parseInt(prompt("¿Cuál es tu edad?"));
+var y = prompt("¿De qué color es tu pelo?");
+var z = prompt("¿Cual es tu comida preferida?");
+var i = parseInt(prompt("Cual es tu número favorito"));
+var Nombre ="Te llamas "+j+"";
+var Edad= ", tienes "+x+" años";
+var Pelo = ", el color de tu pelo es "+y+"";
+var Comida = ", tu comida favorita es el/la "+z+"";
+var Numero = " y tu número favorito es el "+i+"";
+document.write (Nombre + Edad + Pelo + Comida + Numero);
+document.write(resultado);
